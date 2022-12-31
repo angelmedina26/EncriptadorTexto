@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-size: 1em;
+    --fondo: #f3f5fc;
+    background: var(--fondo);
+}
+
+main {
+    display: flex;
+    /* width: 100%; */
+}
+
+header {
+    padding: 2em;
+}
+
+.zona-texto {
+    width: 40%;
+    padding-left: 3em;
+    height: 100vh;
+}
+
+
+.texto {
+    margin: 1em;
+    padding: 15px;
+    background-color: var(--fondo);
+    border-color: var(--fondo);
+    border: none;
+    font-size: 20px;
+    width: 90%;
+}
+
+
+.texto::placeholder {
+    color: #052051;
+}
+
+.texto:focus {
+    outline: none;
+    max-height: fit-content;
+}
+
+p {
+    padding-left: 5em;
+    margin: 5px 36px;
+    font-size: 1em;
+    color: #adb5bd;
+}
+
+.botones {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.encriptar {
+    background-color: #052051;
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    color: #ced4da;
+    margin: 1em;
+}
+
+.encriptar:hover {
+    font-size: 1em;
+}
+
+.encriptar:active {
+    height: 45px;
+    width: 190px;
+}
+
+.desencriptar {
+    background-color: #ced4da;
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    color: #052051;
+    border-color: #052051;
+    margin: 1em;
+}
+
+.desencriptar:hover {
+    font-size: 1em;
+}
+
+.desencriptar:active {
+    height: 45px;
+    width: 190px;
+}
+
+.zona-busqueda {
+    display: grid;
+    border: none;
+    border-radius: 50px 32px 50px 0;
+    background: white;
+    height: fit-content;
+    margin: 1em 3em;
+    width: 35%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    place-content: center;
+}
+
+#textdecoded {
+    outline: none;
+    border: none;
+    width: 80%;
+    height: 100%;
+    margin: 1rem;
+}
+
+#textdecoded:focus {
+    outline: none;
+    border: none;
+}
+
+#copiar {
+    background-color: #ced4da;
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    color: #052051;
+    border-color: #052051;
+    margin: 1em;
+}
+
+#copiar:hover {
+    font-size: 1em;
+}
+
+#copiar:active {
+    height: 45px;
+    width: 190px;
+}
+
+@media screen and (max-width: 480px) {}
